@@ -16,6 +16,7 @@ public interface Lock {
     String getRealLockName();
 
     /**
+     * try to get lock, wait if not get the lock
      * 尝试获取锁，如果获取不到，会一直阻塞
      *
      * @throws : 连接断开、interrupt等均会抛出CannotAcquireLockException
